@@ -46,9 +46,9 @@
 - openocd -f interface/olimex-arm-usb-ocd.cfg -f target/stm32f2x.cfg
 
 ### FreeRTOS Hard Fault Problem
-FreeRTOSConfig.h에 아래와 같이 한줄 추가
-샵define configUSE_TIME_SLICING 0
+- FreeRTOSConfig.h에 아래와 같이 한줄 추가
+  - define configUSE_TIME_SLICING 0
 
-### JTAG 접속 불가
+### JTAG 접속 불가 문제
 main함수내의 GPIO_ConfigAN() 주석처리
 (모든 GPIO 핀을 disable 시키는 함수, 전력소모 방지)
