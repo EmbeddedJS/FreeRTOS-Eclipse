@@ -47,7 +47,7 @@
 
 ### FreeRTOS Hard Fault Problem
 FreeRTOSConfig.h에 아래와 같이 한줄 추가
-#define configUSE_TIME_SLICING 0
+샵define configUSE_TIME_SLICING 0
 
 ### JTAG 접속 불가
 main함수내의 GPIO_ConfigAN() 주석처리
