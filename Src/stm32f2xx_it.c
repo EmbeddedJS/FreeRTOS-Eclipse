@@ -29,6 +29,7 @@
 #include "stm32f2xx_it.h"
 #include "main.h"
 #include "cmsis_os.h"
+
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
 /* Private macro -------------------------------------------------------------*/
@@ -118,6 +119,7 @@ void DebugMon_Handler(void)
 void SysTick_Handler(void)
 {
   xPortSysTickHandler();
+
 }
 
 /******************************************************************************/

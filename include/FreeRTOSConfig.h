@@ -63,7 +63,6 @@
     1 tab == 4 spaces!
 */
 
-
 #ifndef FREERTOS_CONFIG_H
 #define FREERTOS_CONFIG_H
 
@@ -179,3 +178,5 @@ provided in this demo can be extended to save even more power. */
 
 #endif /* FREERTOS_CONFIG_H */
 
+// Hard Fault 방지
+#define configUSE_TIME_SLICING 0

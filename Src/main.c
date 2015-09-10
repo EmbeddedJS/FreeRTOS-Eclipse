@@ -81,7 +81,7 @@ int main(void)
   SystemClock_Config();
 
   /* Configure GPIO's to AN to reduce power consumption */
-  GPIO_ConfigAN();
+  //GPIO_ConfigAN();
 
   /* Initialize LEDs */
   BSP_LED_Init(LED1);
